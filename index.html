@@ -1,8 +1,14 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#030706">
+<meta name="description" content="Stock Burner trading community. Explore market discussions, trading education and market updates. Trading involves risk.">
+<title>Stock Burner | Trading Community</title>
 
-<!-- Meta Pixel Code -->
+<!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -10,294 +16,726 @@ n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1079291354924362');
-fbq('track', 'PageView');
+fbq('init','1079291354924362');
+fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1079291354924362&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1079291354924362&ev=PageView&noscript=1" alt="">
+</noscript>
+<!-- End Meta Pixel -->
 
-    <!-- 4 Seconds Auto Redirect with Pixel Track -->
-    <script>
-        setTimeout(function() {
-            if(typeof fbq === 'function') {
-                fbq('track', 'Lead');
-            }
-            window.location.href = "https://telegram.me/+JDAAdShxpd9iZWY1";
-        }, 4000);
-    </script>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock Burner - Full Premium Access</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-        body {
-            background-color: #0c0908;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
+<style>
+:root {
+    --bg: #030706;
+    --panel: #07100c;
+    --green: #00f58a;
+    --green2: #00b963;
+    --gold: #ffc928;
+    --white: #f8fafc;
+    --muted: #aab4ae;
+}
 
-        .container {
-            width: 100%;
-            max-width: 420px;
-            background: linear-gradient(145deg, #120d0a, #0c0908);
-            border-radius: 24px;
-            padding: 25px 20px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            position: relative;
-            overflow: hidden;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        /* Top Badge */
-        .top-badge {
-            background: linear-gradient(90deg, #d4af37, #f3e5ab, #d4af37);
-            color: #120d0a;
-            font-size: 11px;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding: 6px 15px;
-            border-radius: 20px;
-            display: inline-block;
-            margin-bottom: 20px;
-            letter-spacing: 1px;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        /* Profile Image */
-        .profile-container {
-            position: relative;
-            width: 110px;
-            height: 110px;
-            margin: 0 auto 20px;
-        }
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(0,245,138,.09), transparent 38%),
+        radial-gradient(ellipse at 0% 30%, rgba(255,201,40,.055), transparent 30%),
+        var(--bg);
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 12px;
+    overflow-x: hidden;
+}
 
-        .profile-img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #d4af37;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
-        }
+button, a {
+    -webkit-tap-highlight-color: transparent;
+}
 
-        /* Channel Link Box */
-        .channel-box {
-            background: rgba(18, 120, 93, 0.15);
-            border: 1px solid rgba(34, 197, 94, 0.4);
-            color: #ffffff;
-            padding: 12px 15px;
-            border-radius: 14px;
-            font-size: 13px;
-            font-weight: 600;
-            margin-bottom: 25px;
-            word-break: break-all;
-            box-shadow: 0 0 15px rgba(34, 197, 94, 0.2);
-        }
+.page {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0,245,138,.19);
+    border-radius: 22px;
+    background:
+        linear-gradient(180deg, rgba(5,13,9,.97), rgba(2,7,5,.99));
+    box-shadow: 0 20px 70px rgba(0,0,0,.55);
+    animation: enter .65s ease both;
+}
 
-        /* Headings */
-        .main-title {
-            font-size: 24px;
-            font-weight: 800;
-            color: #f3e5ab;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 5px;
-        }
+.page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), var(--green), transparent);
+}
 
-        .sub-title {
-            font-size: 13px;
-            font-weight: 600;
-            color: #cccccc;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
-        }
+.content {
+    padding: 26px 21px 22px;
+    position: relative;
+    z-index: 1;
+}
 
-        .welcome-text {
-            font-size: 12px;
-            color: #999999;
-            margin-bottom: 20px;
-        }
+/* Decorative market background */
+.market-bg {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    height: 250px;
+    overflow: hidden;
+    opacity: .17;
+    pointer-events: none;
+    mask-image: linear-gradient(to bottom, transparent, black 20%, black 70%, transparent);
+}
 
-        /* Feature Card Box */
-        .feature-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 12px;
-            padding: 14px;
-            margin-bottom: 18px;
-            text-align: left;
-        }
+.candles {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+    transform: rotate(-8deg) scale(1.1);
+}
 
-        .feature-item {
-            display: flex;
-            align-items: center;
-            font-size: 13px;
-            font-weight: 500;
-            color: #e5e5e5;
-            margin: 8px 0;
-        }
+.candle {
+    width: 7px;
+    height: var(--h);
+    position: relative;
+    background: var(--c);
+    border-radius: 1px;
+}
 
-        .feature-item i {
-            color: #22c55e;
-            margin-right: 10px;
-            font-size: 14px;
-        }
+.candle::before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: -13px;
+    height: calc(var(--h) + 26px);
+    width: 1px;
+    background: var(--c);
+}
 
-        /* List Features */
-        .feature-list {
-            text-align: left;
-            margin-bottom: 25px;
-            padding: 0 5px;
-        }
+.candle:nth-child(3n) {
+    --c: #ff4545;
+}
 
-        .feature-list-item {
-            display: flex;
-            align-items: center;
-            font-size: 13px;
-            font-weight: 500;
-            color: #f0f0f0;
-            margin: 10px 0;
-        }
+.candle:nth-child(3n + 1) {
+    --c: #00f58a;
+}
 
-        .feature-list-item i {
-            color: #22c55e;
-            margin-right: 12px;
-            font-size: 14px;
-        }
+.candle:nth-child(3n + 2) {
+    --c: #16c784;
+}
 
-        /* CTA Button */
-        .cta-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #22c55e, #15803d);
-            color: #ffffff;
-            text-decoration: none;
-            padding: 15px 20px;
-            border-radius: 14px;
-            font-size: 15px;
-            font-weight: 700;
-            box-shadow: 0 4px 20px rgba(34, 197, 94, 0.5);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            margin-bottom: 20px;
-            cursor: pointer;
-        }
+/* Header */
+.brand-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--green);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
 
-        .cta-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(34, 197, 94, 0.7);
-        }
+.brand-label::before,
+.brand-label::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: var(--green);
+    opacity: .65;
+}
 
-        .cta-btn i {
-            margin-right: 10px;
-            font-size: 18px;
-        }
+.profile-ring {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 17px;
+    padding: 4px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #fff0a1, var(--gold), #8c6411);
+    box-shadow: 0 0 25px rgba(255,201,40,.22);
+}
 
-        /* Footer Info */
-        .footer-info {
-            font-size: 12px;
-            color: #d4af37;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
+.profile-ring img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid #08100b;
+    border-radius: 50%;
+    background: #111;
+}
 
-        .footer-sub {
-            font-size: 11px;
-            color: #aaaaaa;
-            margin-bottom: 12px;
-        }
+.heading {
+    text-align: center;
+    position: relative;
+}
 
-        .disclaimer {
-            font-size: 9px;
-            color: #777777;
-            line-height: 1.3;
-        }
-    </style>
+.heading h1 {
+    color: #fff;
+    font-size: clamp(31px, 9vw, 43px);
+    font-weight: 900;
+    line-height: 1.12;
+    letter-spacing: -1px;
+    text-shadow: 0 3px 20px rgba(255,255,255,.08);
+}
+
+.heading h1 span {
+    display: block;
+    margin-top: 2px;
+    color: var(--gold);
+    font-family: 'Permanent Marker', cursive;
+    font-size: clamp(37px, 10vw, 48px);
+    letter-spacing: 0;
+    text-shadow: 0 0 24px rgba(255,201,40,.15);
+}
+
+.subtitle {
+    margin-top: 14px;
+    color: #d9dfdb;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.subtitle b {
+    color: var(--gold);
+    margin: 0 5px;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    margin: 17px 0 22px;
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.welcome::before,
+.welcome::after {
+    content: "";
+    width: 35px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold));
+}
+
+.welcome::after {
+    transform: rotate(180deg);
+}
+
+/* Main Telegram button */
+.join-btn {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 17px 8px 9px;
+    margin: 0 auto 22px;
+    overflow: hidden;
+    border: 1px solid rgba(177,255,205,.75);
+    border-radius: 50px;
+    background: linear-gradient(110deg, #00f58a, #00b85f 55%, #08763e);
+    color: white;
+    text-decoration: none;
+    box-shadow:
+        0 0 9px rgba(0,245,138,.55),
+        0 0 28px rgba(0,245,138,.19),
+        inset 0 1px 1px rgba(255,255,255,.55);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.join-btn::before {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border: 1px solid rgba(255,255,255,.17);
+    border-radius: 50px;
+    pointer-events: none;
+}
+
+.join-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 14px rgba(0,245,138,.6), 0 0 36px rgba(0,245,138,.25);
+}
+
+.telegram-circle {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.5);
+    background: rgba(0,0,0,.15);
+    font-size: 23px;
+}
+
+.join-text {
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .3px;
+    line-height: 1.5;
+}
+
+.join-arrow {
+    flex-shrink: 0;
+    font-size: 17px;
+}
+
+/* Main features */
+.features-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.big-feature {
+    min-height: 93px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 13px 10px;
+    border: 1px solid rgba(0,245,138,.47);
+    border-radius: 15px;
+    background: linear-gradient(145deg, rgba(0,245,138,.06), rgba(255,255,255,.012));
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(0,245,138,.6);
+    border-radius: 50%;
+    color: var(--green);
+    background: rgba(0,245,138,.055);
+    font-size: 17px;
+}
+
+.big-feature p {
+    color: #e8eeea;
+    font-size: 10px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.big-feature strong {
+    display: block;
+    color: var(--green);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.features-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.small-feature {
+    min-height: 108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 12px 5px;
+    border: 1px solid rgba(0,245,138,.32);
+    border-radius: 12px;
+    background: rgba(0,245,138,.025);
+}
+
+.small-feature .feature-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+}
+
+.small-feature p {
+    color: #f0f3f1;
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 24px 0 18px;
+    color: var(--gold);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 17px;
+    text-align: center;
+}
+
+.slogan::before,
+.slogan::after {
+    content: "";
+    flex: 1;
+    max-width: 35px;
+    height: 1px;
+    background: var(--gold);
+}
+
+/* Mini market chart */
+.mini-chart {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 0 auto 6px;
+    opacity: .75;
+}
+
+.mini-chart span {
+    width: 5px;
+    height: var(--h);
+    background: var(--c);
+    position: relative;
+}
+
+.mini-chart span::after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: -5px;
+    width: 1px;
+    height: calc(var(--h) + 10px);
+    background: var(--c);
+}
+
+/* Footer */
+.footer {
+    padding: 18px 17px 17px;
+    border-top: 1px solid rgba(0,245,138,.2);
+    background: rgba(0,0,0,.2);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-item:first-child {
+    border-right: 1px solid rgba(255,201,40,.3);
+}
+
+.footer-item i {
+    color: var(--gold);
+    font-size: 21px;
+}
+
+.footer-item p {
+    color: #c4cbc6;
+    font-size: 9px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.footer-item strong {
+    display: block;
+    color: var(--gold);
+    font-size: 11px;
+}
+
+.risk {
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,.07);
+    color: #aeb5b0;
+    font-size: 9px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.risk strong {
+    color: #f5cd62;
+}
+
+@keyframes enter {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 380px) {
+    body {
+        padding: 8px;
+    }
+
+    .content {
+        padding: 22px 13px 17px;
+    }
+
+    .heading h1 {
+        font-size: 32px;
+    }
+
+    .heading h1 span {
+        font-size: 38px;
+    }
+
+    .big-feature {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+        padding: 11px 9px;
+    }
+
+    .big-feature p {
+        font-size: 9px;
+    }
+
+    .big-feature strong {
+        font-size: 11px;
+    }
+
+    .small-feature p {
+        font-size: 8px;
+    }
+
+    .join-text {
+        font-size: 10px;
+    }
+
+    .footer {
+        padding: 16px 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <div class="container">
-        <!-- Top Badge -->
-        <div class="top-badge">⭐ Premium: Stock Burner: Full Premium Access</div>
+<main class="page">
 
-        <!-- Profile Photo -->
-        <div class="profile-container">
-            <img src="dinesh sb.jpeg" alt="Profile" class="profile-img">
+    <!-- Decorative candlestick background -->
+    <div class="market-bg" aria-hidden="true">
+        <div class="candles">
+            <i class="candle" style="--h:35px"></i>
+            <i class="candle" style="--h:60px"></i>
+            <i class="candle" style="--h:28px"></i>
+            <i class="candle" style="--h:80px"></i>
+            <i class="candle" style="--h:48px"></i>
+            <i class="candle" style="--h:95px"></i>
+            <i class="candle" style="--h:43px"></i>
+            <i class="candle" style="--h:70px"></i>
+            <i class="candle" style="--h:34px"></i>
+            <i class="candle" style="--h:88px"></i>
+            <i class="candle" style="--h:52px"></i>
+            <i class="candle" style="--h:100px"></i>
+            <i class="candle" style="--h:45px"></i>
+            <i class="candle" style="--h:72px"></i>
+            <i class="candle" style="--h:37px"></i>
+            <i class="candle" style="--h:84px"></i>
+            <i class="candle" style="--h:50px"></i>
+            <i class="candle" style="--h:65px"></i>
         </div>
-
-        <!-- Telegram Channel Link Box -->
-        <div class="channel-box">
-            STOCK BURNER CHANNEL LINK<br>
-            <span style="font-size: 11px; color: #86efac;">https://telegram.me/+JDAAdShxpd9iZWY1</span>
-        </div>
-
-        <!-- Main Title -->
-        <div class="main-title">STOCK BURNER</div>
-        <div class="sub-title">NIFTY • BANKNIFTY • OPTIONS</div>
-        <div class="welcome-text">wel come back</div>
-
-        <!-- Card Section 1 -->
-        <div class="feature-card">
-            <div class="feature-item"><i class="fa-solid fa-check"></i> Trusted by 5,000+ Traders</div>
-            <div class="feature-item"><i class="fa-solid fa-check"></i> Daily Consistent Setups</div>
-        </div>
-
-        <!-- Feature List Section -->
-        <div class="feature-list">
-            <div class="feature-list-item"><i class="fa-solid fa-check"></i> 5–7 High Probability Trades</div>
-            <div class="feature-list-item"><i class="fa-solid fa-check"></i> Exact Entry, SL & Target</div>
-            <div class="feature-list-item"><i class="fa-solid fa-check"></i> Beginner Friendly Guidance</div>
-            <div class="feature-list-item"><i class="fa-solid fa-check"></i> Live Market Updates</div>
-        </div>
-
-        <!-- CTA Button with Pixel Tracking Script -->
-        <a href="https://telegram.me/+JDAAdShxpd9iZWY1" target="_blank" class="cta-btn" id="joinBtn">
-            <i class="fa-brands fa-telegram"></i> JOIN NOW FOR PREMIUM TRADING
-        </a>
-
-        <!-- Footer details -->
-        <div class="footer-info">⏳ Free Access Closing Soon</div>
-        <div class="footer-sub">📄 Limited Seats • Active Community</div>
-        <div class="disclaimer">⚠ Market investments are subject to risk</div>
     </div>
 
-    <!-- Script to Fix Pixel Tracking Mismatch on Click -->
-    <script>
-        document.getElementById('joinBtn').addEventListener('click', function(e) {
-            e.preventDefault();
-            var targetUrl = this.href;
-            
-            // Track conversion event on Meta Pixel before redirecting
-            if (typeof fbq === 'function') {
-                fbq('track', 'Lead');
+    <section class="content">
+
+        <div class="brand-label">Trading Community</div>
+
+        <!-- Replace with your actual hosted image URL if needed -->
+        <div class="profile-ring">
+            <img src="dinesh%20sb.jpeg" alt="Stock Burner profile" width="96" height="96">
+        </div>
+
+        <header class="heading">
+            <h1>STOCK <span>BURNER</span></h1>
+            <p class="subtitle">NIFTY <b>•</b> BANKNIFTY <b>•</b> OPTIONS</p>
+            <p class="welcome">WELCOME BACK</p>
+        </header>
+
+        <!-- Direct Telegram CTA -->
+        <a
+            href="https://telegram.me/+JDAAdShxpd9iZWY1"
+            class="join-btn"
+            id="joinBtn"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span class="telegram-circle">
+                <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+            </span>
+            <span class="join-text">JOIN STOCK BURNER NOW</span>
+            <i class="fa-solid fa-arrow-right join-arrow" aria-hidden="true"></i>
+        </a>
+
+        <!-- Community highlights -->
+        <section class="features-top" aria-label="Community highlights">
+
+            <article class="big-feature">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-users" aria-hidden="true"></i>
+                </div>
+                <p>Community<br><strong>5,000+ Traders*</strong></p>
+            </article>
+
+            <article class="big-feature">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                </div>
+                <p>Market Analysis<br><strong>Trading Setups</strong></p>
+            </article>
+
+        </section>
+
+        <section class="features-bottom" aria-label="More features">
+
+            <article class="small-feature">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+                </div>
+                <p>Setup<br>Analysis</p>
+            </article>
+
+            <article class="small-feature">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+                </div>
+                <p>Entry &amp;<br>Stop-Loss</p>
+            </article>
+
+            <article class="small-feature">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                </div>
+                <p>Learning<br>Guidance</p>
+            </article>
+
+            <article class="small-feature">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                </div>
+                <p>Market<br>Updates</p>
+            </article>
+
+        </section>
+
+        <div class="slogan">Trade Smarter · Grow Together</div>
+
+        <div class="mini-chart" aria-hidden="true">
+            <span style="--h:12px;--c:#00f58a"></span>
+            <span style="--h:19px;--c:#00f58a"></span>
+            <span style="--h:25px;--c:#00f58a"></span>
+            <span style="--h:15px;--c:#ff4545"></span>
+            <span style="--h:22px;--c:#00f58a"></span>
+            <span style="--h:29px;--c:#00f58a"></span>
+            <span style="--h:17px;--c:#ff4545"></span>
+            <span style="--h:24px;--c:#00f58a"></span>
+            <span style="--h:13px;--c:#ff4545"></span>
+            <span style="--h:20px;--c:#00f58a"></span>
+            <span style="--h:28px;--c:#00f58a"></span>
+            <span style="--h:16px;--c:#ff4545"></span>
+            <span style="--h:23px;--c:#00f58a"></span>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+            <div class="footer-item">
+                <i class="fa-solid fa-hourglass-half" aria-hidden="true"></i>
+                <p><strong>Community Access</strong>Explore available content</p>
+            </div>
+
+            <div class="footer-item">
+                <i class="fa-solid fa-users" aria-hidden="true"></i>
+                <p><strong>Active Community</strong>Updates &amp; discussions</p>
+            </div>
+
+        </div>
+
+        <p class="risk">
+            <strong><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+            Market investments are subject to risk.</strong><br>
+            Trading in stocks, futures and options can cause substantial losses.
+            Content is for educational purposes only. No profits are guaranteed.
+            Please assess your risk and consult a SEBI-registered investment adviser
+            where appropriate.
+        </p>
+
+    </footer>
+
+</main>
+
+<script>
+(function () {
+    const joinBtn = document.getElementById('joinBtn');
+
+    if (joinBtn) {
+        joinBtn.addEventListener('click', function () {
+            // Record Lead only when the visitor clicks the Telegram CTA.
+            if (typeof window.fbq === 'function') {
+                window.fbq('track', 'Lead');
             }
-            
-            // Small delay to ensure pixel fires successfully before navigation
-            setTimeout(function() {
-                window.location.href = targetUrl;
-            }, 300);
         });
-    </script>
+    }
+})();
+</script>
 
 </body>
 </html>
+```
